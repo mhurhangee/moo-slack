@@ -1,20 +1,27 @@
 {
-  "name": "slack-edge-test",
-  "version": "1.0.0",
-  "description": "",
+  "name": "moo-slack",
+  "version": "0.0.1",
+  "description": "Get More Out Of AI: Slack App",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "format": "prettier --write .",
+    "format:check": "prettier --check ."
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "keywords": [
+    "slack",
+    "ai"
+  ],
+  "author": "m.hurhangee@me.com",
+  "license": "MIT",
   "packageManager": "pnpm@10.8.1",
   "dependencies": {
     "slack-edge": "^1.3.8"
   },
   "devDependencies": {
     "@types/node": "^22.15.3",
-    "typescript": "^5.8.3"
+    "typescript": "^5.8.3",
+    "prettier": "^3.5.3"
   }
 }
