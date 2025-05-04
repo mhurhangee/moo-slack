@@ -1,6 +1,5 @@
 // api/slack.ts
 import { SlackApp, Assistant } from 'slack-edge'
-import { waitUntil } from '@vercel/functions';
 
 // Edge Runtime
 export const config = {
@@ -39,5 +38,5 @@ app.command('/moo-hello', async (req) => {
 
 // Create HTTP Handler
 export default async function handler(req: Request): Promise<Response> {
-  return await app.run(req, { waitUntil })
+  return await app.run(req)
 }
