@@ -37,6 +37,6 @@ app.command('/moo-hello', async (req) => {
 })
 
 // Create HTTP Handler
-export default async function handler(req: Request): Promise<Response> {
+export default async function POST(req: Request): Promise<Response> {
   return await app.run(req)
 }
